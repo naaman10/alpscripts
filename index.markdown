@@ -9,6 +9,9 @@ layout: default
 <section class="container script-text h-100 d-flex justify-content-center">
     <div class="row align-items-center ">
         <div class="col">
+            <div class="alert alert-secondary" role="alert">
+                This is a test script.
+            </div>
             <p class="lead text-center">Hi, this is [Your Name] with Medical Compliance. Could you direct me to the person in charge of the HIPAA & OSHA compliance?</p>
         </div>
     </div>
