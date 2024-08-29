@@ -1,0 +1,11 @@
+<section class="container">
+    <div class="row">
+        <div class="col">
+            <ul>
+                {% for item in page.script %}
+                <li>{{ item.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

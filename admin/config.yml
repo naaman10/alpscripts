@@ -17,7 +17,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "scriptGroup"
     label: "Script Group"
-    folder: "_scripts/groups"
+    folder: "_groups"
     create: true
     slug: "{{slug}}"
     fields: 
@@ -25,7 +25,7 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: true }
   - name: "scriptPage"
     label: "sciptPage"
-    folder: "_scripts/pages"
+    folder: "_scripts"
     create: true
     slug: "{{slug}}"
     fields: 
@@ -38,3 +38,10 @@ collections:
         fields: 
           - { label: "Script Text", name: "text", widget: "markdown" }
           - { label: "Icon", name: "icon", widget: "image" }
+      - label: "Navigation"
+        name: "navigation"
+        widget: "list"
+        fields: 
+          - { label: "Button Text", name: "text", widget: "string", required: true }
+          - { label: "Button Colour", name: "colour", widget: "select", options: ["Green","Red"], default: "Green" }
+          - { label: "Is Disposition?", name: "disposition", widget: "boolean", default: false }
