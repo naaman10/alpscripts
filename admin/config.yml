@@ -24,7 +24,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptGroup" }
       - { label: "Title", name: "title", widget: "string", required: true }
   - name: "scriptPage"
-    label: "sciptPage"
+    label: "scipt Page"
     folder: "_scripts"
     create: true
     slug: "{{slug}}"
