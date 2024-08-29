@@ -22,7 +22,7 @@ collections:
     slug: "{{slug}}"
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptGroup" }
-      - { label: "Title", name: "title", widget: "string", required: "true" }
+      - { label: "Title", name: "title", widget: "string", required: true }
   - name: "scriptPage"
     label: "sciptPage"
     folder: "_scripts/pages"
@@ -30,7 +30,7 @@ collections:
     slug: "{{slug}}"
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptPage" }
-      - { label: "Title", name: "title", widget: "string", required: "true" }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Script Parent", name: "parent", widget: "relation", collection: "scriptGroup", search_fields: ["title"], value_field: "title", display_fields: ["title"], multiple: false }
       - label: "Script"
         name: "script"
