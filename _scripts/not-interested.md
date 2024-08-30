@@ -5,7 +5,7 @@ parent: MCC OSR
 script:
   - text: This is in regards to your annual OSHA regulations. Who handles the
       compliance in the office?
-    icon: /images/uploads/mccosr.svg
+    icon: /images/uploads/osr.svg
 navigation:
   - disposition: false
     text: Reached DM
