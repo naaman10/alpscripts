@@ -43,7 +43,7 @@ collections:
         widget: "list"
         fields: 
           - { label: "Button Text", name: "text", widget: "string", required: true }
-          - { label: "Button Colour", name: "color", widget: "select", options: ["Green","Red"], default: "Green" }
+          - { label: "Button Colour", name: "color", widget: "select", options: ["Green","Red"] }
           - { label: "Is Disposition?", name: "disposition", widget: "boolean", default: false }
           - label: "Link to"
             name: "link"
@@ -53,6 +53,3 @@ collections:
             value_field: "slug"
             display_fields: ["title","parent"]
             multiple: false
-            filters: 
-              - field: "parent"
-                values: ["{{ parent }}"]
