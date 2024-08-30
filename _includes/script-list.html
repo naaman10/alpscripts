@@ -3,7 +3,7 @@
         <div class="col">
             <ul>
                 {% for item in page.script %}
-                <li>{{ item.text }}</li>
+                <li>{{ item.text | markdownify }}</li>
                 {% endfor %}
             </ul>
         </div>

@@ -1,0 +1,11 @@
+{% if navigation %}
+    <section class="container-fluid">
+        <div class="row">
+            {% for nav in page.navigation %}
+            <div class="col">
+                <a class="btn-primary" href="">{{ nav.text }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}
