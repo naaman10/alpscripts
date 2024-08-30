@@ -53,3 +53,4 @@ collections:
             value_field: "slug"
             display_fields: ["title","parent"]
             multiple: false
+            required: false
