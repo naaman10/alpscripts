@@ -1,9 +1,14 @@
-{% if navigation %}
-    <section class="container-fluid">
-        <div class="row">
+{% if page.navigation %}
+    <section class="container-fluid position-fixed bottom-0 bg-secondary-subtle">
+        <div class="row d-flex justify-content-evenly p-3">
             {% for nav in page.navigation %}
-            <div class="col">
-                <a class="btn-primary" href="">{{ nav.text }}</a>
+            
+            <div class="col text-center">
+                {% if nav.disposition == true %}
+                <span class="disposition">{{ nav.text }}</span>
+                {% else %}
+                <a class="btn {% case nav.color %}{%  when 'Green' %}btn-success{% when 'Red' %}btn-danger{% endcase %}" href="">{{ nav.text }}</a>
+                {% endif %}
             </div>
             {% endfor %}
         </div>

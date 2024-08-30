@@ -5,3 +5,10 @@ body {
 .script-text {
     min-height: 50vh;
 }
+.script-list p {
+    margin: 0;
+    font-size: 18px;
+}
+.script-list img {
+    margin-right: 10px;
+}
