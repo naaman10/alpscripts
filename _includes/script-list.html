@@ -4,7 +4,7 @@
             <ul class="d-flex flex-column justify-content-center">
                 {% for item in page.script %}
                 <li class="script-list d-flex align-items-center">
-                    {% if item.icon %}<img src="{{ item.icon }}" width="40px">{% endif %}{{ item.text | markdownify }}
+                    <div class="align-items-center text-center">{% if item.icon %}<img src="{{ item.icon }}" width="40px">{% endif %}{{ item.text | markdownify }}</div>
                 </li>
                 {% endfor %}
             </ul>

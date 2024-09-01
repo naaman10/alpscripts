@@ -41,6 +41,7 @@ collections:
       - label: "Navigation"
         name: "navigation"
         widget: "list"
+        required: false
         fields: 
           - { label: "Button Text", name: "text", widget: "string", required: true }
           - { label: "Button Colour", name: "color", widget: "select", options: ["Green","Red"] }
