@@ -18,12 +18,12 @@ layout: default
                   </tr>
                 </thead>
                 <tbody>
-                    {% for script in site.scripts %}
                     {% capture page %}{{ page.title | slugify }}{% endcapture %}
+                    {% for script in site.scripts %}
                     {% capture parent %}{{ script.parent | slugify }}{% endcapture %}
                     {% if parent == page %}
                   <tr>
-                    <th scope="row">{{ script.title }}</th>
+                    <td>{{ script.title }}</td>
                     <td><a href="{{ script.url }}">View</a></td>
                   </tr>
                     {% endif %}

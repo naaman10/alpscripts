@@ -50,7 +50,7 @@ collections:
             widget: "relation"
             collection: "scriptPage"
             search_fields: ["title","parent"]
-            value_field: "slug"
+            value_field: "{{slug}}"
             display_fields: ["title","parent"]
             multiple: false
             required: false
