@@ -10,7 +10,7 @@ navigation:
   - color: Red
     disposition: false
     text: DM Unavailable
-    link: ""
+    link: dm-unavailable
   - color: Red
     disposition: false
     text: Not Interested
