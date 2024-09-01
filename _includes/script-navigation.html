@@ -7,7 +7,7 @@
                 {% if nav.disposition == true %}
                 <span class="disposition">{{ nav.text }}</span>
                 {% else %}
-                <a class="btn {% case nav.color %}{%  when 'Green' %}btn-success{% when 'Red' %}btn-danger{% endcase %}" href="">{{ nav.text }}</a>
+                <a class="btn {% case nav.color %}{%  when 'Green' %}btn-success{% when 'Red' %}btn-danger{% endcase %}" href="{{ nav.link }}">{{ nav.text }}</a>
                 {% endif %}
             </div>
             {% endfor %}
