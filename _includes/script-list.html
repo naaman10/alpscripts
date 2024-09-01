@@ -1,7 +1,7 @@
 <section class="container vh-100 d-flex justify-content-center align-items-center">
     <div class="row">
         <div class="col">
-            <ul class="d-flex justify-content-center">
+            <ul class="d-flex flex-column justify-content-center">
                 {% for item in page.script %}
                 <li class="script-list d-flex align-items-center">
                     {% if item.icon %}<img src="{{ item.icon }}" width="40px">{% endif %}{{ item.text | markdownify }}

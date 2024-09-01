@@ -37,7 +37,7 @@ collections:
         widget: "list"
         fields: 
           - { label: "Script Text", name: "text", widget: "markdown" }
-          - { label: "Icon", name: "icon", widget: "image" }
+          - { label: "Icon", name: "icon", widget: "image", required: false }
       - label: "Navigation"
         name: "navigation"
         widget: "list"
