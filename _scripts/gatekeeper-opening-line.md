@@ -10,9 +10,11 @@ navigation:
   - color: Red
     disposition: false
     text: DM Unavailable
+    link: ""
   - color: Red
     disposition: false
     text: Not Interested
+    link: not-interested
   - color: Green
     disposition: false
     text: Reached DM
