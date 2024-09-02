@@ -2,6 +2,7 @@
 layout: scriptPage
 title: Not Interested
 parent: MCC OSR
+start: false
 script:
   - text: This is in regards to your annual OSHA regulations. Who handles the
       compliance in the office?
