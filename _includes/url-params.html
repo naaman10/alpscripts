@@ -1,0 +1,5 @@
+{% if page.start == true %}
+<script>window.onload = function() {clearStorage();};</script>
+{% else %}
+<script>window.onload = function() {updateData();};</script>
+{% endif %}
