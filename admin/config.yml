@@ -16,6 +16,7 @@ collections:
     folder: "_scripts"
     create: true
     slug: "{{slug}}"
+    filter: { label: "Script Group", field: "parent" }
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptPage" }
       - { label: "Title", name: "title", widget: "string", required: true }
