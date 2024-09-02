@@ -2,6 +2,7 @@
 layout: scriptPage
 title: Gatekeeper Opening Line
 parent: MCC OSR
+start: true
 script:
   - text: Hi, this is **\[Your Name]** with Medical Compliance. Could you direct me
       to the person in charge of the OSHA compliance?
