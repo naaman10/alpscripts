@@ -15,6 +15,7 @@ collections:
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptGroup" }
       - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Group Image", name: "image", widget: "image", required: false }
   - name: "scriptPage"
     label: "Script Page"
     folder: "_scripts"
