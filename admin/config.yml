@@ -16,7 +16,6 @@ collections:
     folder: "_scripts"
     create: true
     slug: "{{slug}}"
-    identifier_field: {{title}} {{parent}} 
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptPage" }
       - { label: "Title", name: "title", widget: "string", required: true }
