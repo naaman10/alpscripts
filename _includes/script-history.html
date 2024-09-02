@@ -1,9 +1,25 @@
-{% if page.start == false %}
+
 <section class="container-fluid position-fixed top-0">
-    <div class="row d-flex justify-content-evenly p-3"> 
+    <div class="row d-flex justify-content-between p-3"> 
         <div class="col">
-            <button onclick="history.back()" class="btn btn-light">Go Back</button>
+            {% if page.start == false %}<button onclick="history.back()" class="btn btn-light">Go Back</button>{% endif %}
+        </div>
+        <div class="col text-end">
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </button>
+                <ul class="dropdown-menu">
+                    {% assign scriptList = site.scripts | sort "title" %}
+                    {% for script in scriptList %}
+                     {% capture scParent %}{{ script.parent | slugify }}{% endcapture %}
+                     {% capture pgParent %}{{ page.parent | slugify }}{% endcapture %}
+                        {% if scParent == pgParent %}
+                         <li><a class="dropdown-item" href="{{ script.slug }}">{{ script.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+              </div>
         </div>
     </div>
 </section>
-{% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: scriptPage
-title: Gatekeeper Opening Line
+title: 01 Gatekeeper Opening Line
 parent: MCC OSR
 start: true
 script:
@@ -12,11 +12,11 @@ navigation:
   - color: Red
     disposition: false
     text: DM Unavailable
-    link: dm-unavailable
+    link: 03-dm-unavailable
   - color: Red
     disposition: false
     text: Not Interested
-    link: not-interested
+    link: 02-not-interested
   - color: Green
     disposition: false
     text: Reached DM
