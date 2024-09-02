@@ -2,6 +2,7 @@
 layout: scriptPage
 title: DM Unavailable
 parent: MCC OSR
+start: false
 script:
   - text: \*\* Ask \[DM Name] if not already given \*\*
     icon: ""
