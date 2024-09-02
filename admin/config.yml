@@ -20,6 +20,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptPage" }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Script Parent", name: "parent", widget: "relation", collection: "scriptGroup", search_fields: ["title"], value_field: "title", display_fields: ["title"], multiple: false }
+      - { label: "Is Start Page?", name: "start", widget: "boolean", default: false } 
       - label: "Script"
         name: "script"
         widget: "list"

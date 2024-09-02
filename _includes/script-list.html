@@ -4,7 +4,7 @@
             <ul class="d-flex flex-column justify-content-center">
                 {% for item in page.script %}
                 <li class="script-list d-flex align-items-center py-2">
-                    <div class="d-flex flex-row align-items-center">{% if item.icon %}<img src="{{ item.icon }}" width="40px">{% endif %}{{ item.text | markdownify }}</div>
+                    <div class="d-flex {% case item.align %}{% when 'Left' %}flex-row {% when 'Center' %}flex-column text-center{% when 'Right' %}flex-row text-right{% endcase %} align-items-center">{% if item.icon %}<img src="{{ item.icon }}" width="40px">{% endif %}{{ item.text | markdownify }}</div>
                 </li>
                 {% endfor %}
             </ul>
