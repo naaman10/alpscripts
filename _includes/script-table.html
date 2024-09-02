@@ -1,5 +1,5 @@
 <section class="container">
-  <div class="row">
+  <div class="row my-4">
     <div class="col">
       <h1>Scripts</h1>
     </div>
@@ -16,8 +16,8 @@
         <tbody>
           {% for group in site.groups %}
           <tr>
-            <td scope="row">{{ group.title }}</td>
-            <td><a href="{{ group.url }}">View</a></td>
+            <td scope="row">{% if group.image %}<img src="{{group.image}}" width="40px" >{% endif %} {{ group.title }}</td>
+            <td class="text-end"><a href="{{ group.url }}" class="btn btn-light">View</a></td>
           </tr>
           {% endfor %}          
         </tbody>
