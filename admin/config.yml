@@ -22,7 +22,7 @@ collections:
     summary: "{{title}} - {{parent}}"
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptPage" }
-      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Title", name: "title", widget: "string", required: true, hint: "Only include page number and title." }
       - { label: "Script Parent", name: "parent", widget: "relation", collection: "scriptGroup", search_fields: ["title"], value_field: "title", display_fields: ["title"], multiple: false, required: true }
       - { label: "Is Start Page?", name: "start", widget: "boolean", default: false } 
       - label: "Script"
