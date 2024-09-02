@@ -2,6 +2,7 @@
 layout: scriptPage
 title: Voicemail Script
 parent: MCC OSR
+start: false
 script:
   - text: >-
       Hey **\[DM Name]**! This is **\[Your Name]** with Medical Compliance.
