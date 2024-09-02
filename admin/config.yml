@@ -9,8 +9,8 @@ collections:
     create: true
     slug: "{{slug}}"
     view_groups:
-      label: "Groups"
-      field: "parent"
+      - label: "Groups"
+        field: "parent"
     fields: 
       - { label: "Layout", name: "layout", widget: "hidden", default: "scriptGroup" }
       - { label: "Title", name: "title", widget: "string", required: true }
